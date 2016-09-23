@@ -15,5 +15,18 @@ namespace GridPad
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.Text = string.Empty;
+            this.ShowInTaskbar = false;
+            //FormBorderStyle = FormBorderStyle.None;
+            
+            this.Opacity = 0.83;
+            this.WindowState = FormWindowState.Normal;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.Bounds = Screen.PrimaryScreen.Bounds;
+            
+        }
     }
 }
